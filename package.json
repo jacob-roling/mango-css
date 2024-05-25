@@ -1,0 +1,20 @@
+{
+  "name": "mango-css",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "dev": "rimraf ./dist && postcss src/*.css --base src -d ./dist -m -w",
+    "build": "rimraf ./dist && postcss src/*.css --base src -d ./dist -m"
+  },
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.0",
+    "rimraf": "^5.0.7"
+  }
+}
