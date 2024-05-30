@@ -2,9 +2,11 @@
   "name": "mango-css",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
+  "source": "./src/mango.css",
   "scripts": {
-    "dev": "rimraf ./dist && postcss src/*.css --base src -d ./dist -m -w",
-    "build": "rimraf ./dist && postcss src/*.css --base src -d ./dist -m"
+    "dev": "rimraf ./dist && parcel watch",
+    "build": "rimraf ./dist && parcel build"
   },
   "keywords": [],
   "files": [
@@ -13,8 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "postcss-cli": "^11.0.0",
-    "postcss-import": "^16.0.0",
+    "parcel": "^2.12.0",
     "rimraf": "^5.0.7"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
